@@ -1,1 +1,0 @@
-# ShinChanU.github.io
