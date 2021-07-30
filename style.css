@@ -1,0 +1,43 @@
+:root {
+  --largeFont-size: 50px;
+  --mediumFont-size: 30px;
+}
+
+body {
+  border: solid 3px rgb(77, 28, 28);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_header {
+  font-size: var(--largeFont-size);
+  letter-spacing: 11px;
+  border: solid 1px black;
+}
+
+.main_list {
+  list-style: none ;
+  text-align: center;
+  padding-left: 0px;
+  border: solid 1px black;
+}
+
+.main_list li {
+  border: solid 1px red;
+  font-size: var(--mediumFont-size);
+  margin: 20px;
+} 
+
+/*  07.30 done-list  
+    html: 전체 기본틀, main 간단히
+    css: main_태그들 간단 변경  */
+
+/* todo-list
+    1. 새로운 페이지를 만들기
+    2. main_list 마우스 오버 액션
+    3. main_list 클릭시 지정 페이지 호출, 링크든, hidden이든
+    4. css 수정
+    5. js 필요시 작성
+    6. react는 고민 */
