@@ -1,43 +1,91 @@
 :root {
   --largeFont-size: 50px;
   --mediumFont-size: 30px;
+  --purple-color: rgb(227, 188, 253);
 }
 
 body {
-  border: solid 3px rgb(77, 28, 28);
-  display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
+.hidden {
+  display: none;
+}
+
+/* main_page */
+.main_page {
+  border: solid 5px rgb(255, 18, 216);
+  height: 100vh;
+}
 .main_header {
   font-size: var(--largeFont-size);
   letter-spacing: 11px;
-  border: solid 1px black;
+  text-align: center;
+  padding-top: 40px;
 }
 
 .main_list {
   list-style: none ;
-  text-align: center;
   padding-left: 0px;
-  border: solid 1px black;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
 }
 
 .main_list li {
-  border: solid 1px red;
+  border-style: outset;
   font-size: var(--mediumFont-size);
   margin: 20px;
+  text-align: center;
+  transition: background-color 0.6s;
 } 
+.main_list li:hover {
+  background-color: var(--purple-color);
+}
+.main_list li:active {
+  border-style: inset;
+}
+
+/* about_page */
+.about_page {
+  height: 100vh;
+  border: solid 5px rgb(255, 143, 38);
+  text-align: center;
+}
+
+/* skill_page */
+.skill_page {
+  height: 100vh;
+  border: solid 5px rgb(68, 255, 50);
+  text-align: center;
+}
+
+/* project_page */
+.project_page {
+  height: 100vh;
+  border: solid 5px rgb(33, 229, 255);
+  text-align: center;
+}
+
+/* contact_page */
+.contact_page {
+  height: 100vh;
+  border: solid 5px rgb(6, 8, 1);
+  text-align: center;
+}
 
 /*  07.30 done-list  
     html: 전체 기본틀, main 간단히
     css: main_태그들 간단 변경  */
 
+/*  08.01 done-list  
+    html: make sub-pages
+    css: menu hover action 
+    js: when menu_list click, change brower */
+
 /* todo-list
-    1. 새로운 페이지를 만들기
-    2. main_list 마우스 오버 액션
-    3. main_list 클릭시 지정 페이지 호출, 링크든, hidden이든
-    4. css 수정
-    5. js 필요시 작성
-    6. react는 고민 */
+    1. sub-page 내용 채워넣기
+    2. home에 좌우 버튼 추가
+    3. when change page, add animation */
