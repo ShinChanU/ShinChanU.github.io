@@ -54,13 +54,26 @@ body {
   border: solid 5px rgb(255, 143, 38);
 }
 
+.about_page div {
+  border: solid 1px black;
+}
 .about_page h1 {
   text-align: center;
 }
 
+.about_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.about_resume {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .about_profile {
-  width: 35%;
-  margin-top: 50px;
+  width: 50%;
 }
 
 /* skill_page */
