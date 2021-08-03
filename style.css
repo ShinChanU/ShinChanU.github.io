@@ -54,7 +54,7 @@ body {
   border: solid 5px rgb(255, 143, 38);
 }
 
-.about_page div {
+.about_page > div {
   border: solid 1px black;
 }
 .about_page h1 {
@@ -64,16 +64,35 @@ body {
 .about_main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100%;
+  height: 60%;
+}
+
+.about_img {
+  text-align: center;
+  margin: auto;
+}
+
+.about_profile {
+  width: 75%;
+}
+
+.about_motto, 
+.about_resume {
+  height: 50%;
+}
+
+.about_motto {
+  font-size: 150%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .about_resume {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.about_profile {
-  width: 50%;
+  padding: 0 20px;
 }
 
 /* skill_page */
@@ -105,6 +124,9 @@ body {
     html: make sub-pages
     css: menu hover action 
     js: when menu_list click, change brower */
+
+/* 08.04 done-list
+    css : add "about" grid
 
 /* todo-list
     1. sub-page 내용 채워넣기
