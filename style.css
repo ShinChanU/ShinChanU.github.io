@@ -10,7 +10,7 @@ body {
 }
 
 .hidden {
-  /* display: none; */
+  display: none;
 }
 
 /* main_page */
@@ -74,6 +74,7 @@ body {
 
 .about_profile {
   width: 75%;
+  border-radius: 50px;
 }
 
 .about_motto, 
