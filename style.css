@@ -96,6 +96,10 @@ body {
   padding: 0 20px;
 }
 
+.about_education {
+  padding-right: 15px;
+}
+
 /* skill_page */
 .skill_page {
   height: 100vh;
@@ -115,6 +119,29 @@ body {
   height: 100vh;
   border: solid 5px rgb(6, 8, 1);
   text-align: center;
+}
+
+.contact_main h1 {
+  margin: 10px;
+}
+
+.contact_main > div {
+  border: black 1px solid;
+}
+
+.contact_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding: 50px;
+}
+
+.contact_means {
+  text-align: start;
+  padding-left: 20px;
+}
+
+.contact_means div {
+  border: 1px black solid;
 }
 
 /*  07.30 done-list  
