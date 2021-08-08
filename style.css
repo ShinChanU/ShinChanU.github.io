@@ -7,6 +7,7 @@
 body {
   justify-content: center;
   align-items: center;
+  
 }
 
 .hidden {
@@ -15,8 +16,7 @@ body {
 
 /* main_page */
 .main_page {
-  border: solid 5px rgb(255, 18, 216);
-  height: 100vh;
+  /* border: solid 5px rgb(255, 18, 216); */
 }
 .main_header {
   font-size: var(--largeFont-size);
@@ -50,12 +50,10 @@ body {
 
 /* about_page */
 .about_page {
-  height: 100vh;
-  border: solid 5px rgb(255, 143, 38);
+  /* border: solid 5px rgb(255, 143, 38); */
 }
 
 .about_page > div {
-  border: solid 1px black;
 }
 .about_page h1 {
   text-align: center;
@@ -64,7 +62,6 @@ body {
 .about_main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 60%;
 }
 
 .about_img {
@@ -102,21 +99,25 @@ body {
 
 /* skill_page */
 .skill_page {
-  height: 100vh;
+  /* height: 100vh; */
   border: solid 5px rgb(68, 255, 50);
   text-align: center;
 }
 
+.skill_page img {
+  width: 200px;
+}
+
 /* project_page */
 .project_page {
-  height: 100vh;
+  /* height: 100vh; */
   border: solid 5px rgb(33, 229, 255);
   text-align: center;
 }
 
 /* contact_page */
 .contact_page {
-  height: 100vh;
+  /* height: 100vh; */
   border: solid 5px rgb(6, 8, 1);
   text-align: center;
 }
@@ -137,11 +138,18 @@ body {
 
 .contact_means {
   text-align: start;
-  padding-left: 20px;
 }
 
 .contact_means div {
   border: 1px black solid;
+}
+
+.contact_means img {
+  width: 33px; 
+}
+
+.links img{
+  width: 100px;
 }
 
 /*  07.30 done-list  
