@@ -100,7 +100,6 @@ body {
 /* skill_page */
 .skill_page {
   /* height: 100vh; */
-  border: solid 5px rgb(68, 255, 50);
   text-align: center;
 }
 
@@ -111,14 +110,36 @@ body {
 /* project_page */
 .project_page {
   /* height: 100vh; */
-  border: solid 5px rgb(33, 229, 255);
+  text-align: center;
+}
+
+.project_element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: start;
+  align-items: center;
+  border-bottom: 5px black dotted;
+  padding-bottom: 60px;
+}
+
+.project_page article div img {
+  height: 300px;
+  align-items: flex-end;
+}
+
+.team_img img {
+  width: 500px;
+}
+
+.paint_img,
+.shopping_img,
+.team_img {
   text-align: center;
 }
 
 /* contact_page */
 .contact_page {
   /* height: 100vh; */
-  border: solid 5px rgb(6, 8, 1);
   text-align: center;
 }
 
