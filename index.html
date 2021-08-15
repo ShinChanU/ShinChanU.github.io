@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <!-- <meta property="og:image" content="img/thumnails.jpg"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <title>CHAN-PORTFOLIO</title>
 </head>
 
@@ -14,7 +17,7 @@
   <!-- main -->
   <section class="main_page">
     <!-- main header -->
-    <h1 class="main_header">PORTFOLIO</h1>
+    <div class="main_header" id="header">PORTFOLIO</div>
     <!-- main list -->
     <ul class="main_list">
       <li class="li_about">about</li>
@@ -26,7 +29,7 @@
 
   <!-- about -->
   <section class="about_page hidden">
-    <h1>ABOUT</h1>
+    <div id="header">ABOUT</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
@@ -63,7 +66,7 @@
 
   <!-- skill -->
   <section class="skill_page hidden">
-    <h1>SKILL</h1>
+    <div id="header">SKILL</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
@@ -88,12 +91,11 @@
       <img src="img/icon/nodejs.png">
     </div>
     </p>
-
   </section>
 
   <!-- project -->
   <section class="project_page hidden">
-    <h1>PROJECT</h1>
+    <div id="header">PROJECT</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
@@ -134,33 +136,51 @@
 
   <!-- contact -->
   <section class="contact_page hidden">
-    <h1>CONTACT</h1>
+    <div id="header">CONTACT</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
     <div class="contact_main">
       <div class="contact_name">
-        <h1 class="name">이름</h1>
-        <div class="myName">신찬우</div>
+        <div class="name">Name</div>
+        <div class="myName">신찬우 (SHIN CHAN U)</div>
       </div>
       <div class="contact_birth">
-        <h1 class="birth_title">생년월일</h1>
-        <div class="myBirth">1997.02.17</div>
+        <div class="birth">Birth</div>
+        <div class="myBirth">1997.02.17 (만 24세)</div>
       </div>
-      <div class="contact_means">
-        <div class="contact_number"><img src="img/icon/call.png"> 010-0000-0000</div>
-        <div class="contact_email"><img src="img/icon/email.png"> ooooo@naver.com</div>
+      <div class="contact_number">
+        <!-- <img src="img/icon/call.png" class="contact_img"> -->
+        <div class="phone_num">Phone number</div>
+        <div class="myNumber">010-2833-3904</div>
+      </div>
+      <div class="contact_email">
+        <div class="Email">E-mail</div>
+        <div class="myEmail">tlscksdn963@naver.com</div>
+        <!-- <img src="img/icon/email.png" class="contact_img"> -->
+      </div>
+      <div class="contact_link">
+        <div class="links">
+          <a href="https://github.com/ShinChanU" target="_blank">
+            <img src="img/icon/github.png">
+            <div>GIT HUB</div>
+          </a>
+          <a href="https://www.naver.com/" target="_blank">
+            <img src="img/icon/naverBlog.png">
+            <div>BLOG</div>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/icon/insta_color.png">
+            <div>INSTAGRAM</div>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="img/icon/facebook_color.png">
+            <div>FACEBOOK</div>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="contact_link">
-      <h1 class="link_title">링크 Link</h1>
-      <div class="links">
-        <a href="https://github.com/ShinChanU" target="_blank"><img src="img/icon/github.png"></a>
-        <a href="https://www.naver.com/" target="_blank"><img src="img/icon/naverBlog.png"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="img/icon/insta_color.png"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="img/icon/facebook_color.png"></a>
-      </div>
-    </div>
+    <div style="margin-left: 600px; font-size: 50px; position: absolute; top: 200px; right: 200px;">blank beauty</div>
   </section>
   <script src="app.js"></script>
 </body>

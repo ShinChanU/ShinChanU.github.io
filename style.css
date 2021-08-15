@@ -7,7 +7,11 @@
 body {
   justify-content: center;
   align-items: center;
-  
+  font-family: 'Oswald', sans-serif;
+}
+
+#header {
+  font-size: var(--largeFont-size);
 }
 
 .hidden {
@@ -15,9 +19,7 @@ body {
 }
 
 /* main_page */
-.main_page {
-  /* border: solid 5px rgb(255, 18, 216); */
-}
+
 .main_header {
   font-size: var(--largeFont-size);
   letter-spacing: 11px;
@@ -49,12 +51,11 @@ body {
 }
 
 /* about_page */
-.about_page {
-  /* border: solid 5px rgb(255, 143, 38); */
+.about_page #header,
+.about_page form {
+  text-align: center;
 }
 
-.about_page > div {
-}
 .about_page h1 {
   text-align: center;
 }
@@ -99,7 +100,6 @@ body {
 
 /* skill_page */
 .skill_page {
-  /* height: 100vh; */
   text-align: center;
 }
 
@@ -109,7 +109,6 @@ body {
 
 /* project_page */
 .project_page {
-  /* height: 100vh; */
   text-align: center;
 }
 
@@ -139,7 +138,6 @@ body {
 
 /* contact_page */
 .contact_page {
-  /* height: 100vh; */
   text-align: center;
 }
 
@@ -147,17 +145,21 @@ body {
   margin: 10px;
 }
 
-.contact_main > div {
-  border: black 1px solid;
-}
-
 .contact_main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  padding: 50px;
+  margin: 50px;
 }
 
-.contact_means {
+.contact_name,
+.contact_birth,
+.contact_number,
+.contact_email {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin: 20px;
+  font-size: var(--mediumFont-size);
+}
+
+.myName, .myBirth, .myNumber, .myEmail {
   text-align: start;
 }
 
@@ -165,23 +167,31 @@ body {
   border: 1px black solid;
 }
 
-.contact_means img {
+.contact_main img {
   width: 33px; 
+}
+
+.contact_link {
+  margin-top: 100px;
+}
+
+.links {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0 100px;
 }
 
 .links img{
   width: 100px;
 }
 
-/*  07.30 done-list  
-    html: 전체 기본틀, main 간단히
-    css: main_태그들 간단 변경  */
+.links img:hover {
+  opacity: 0.3;
+  transition-duration: 0.3s;
+}
 
-/*  08.01 done-list  
-    html: make sub-pages
-    css: menu hover action 
-    js: when menu_list click, change brower */
-
-/* 08.04 done-list
-    css : add "about" grid
-    */
+.links a {
+  color: black; 
+  text-decoration: none;
+}
