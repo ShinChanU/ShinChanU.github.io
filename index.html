@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <!-- <meta property="og:image" content="img/thumnails.jpg"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
   <title>CHAN-PORTFOLIO</title>
 </head>
 
 <body>
   <!-- main -->
-  <section class="main_page">
+  <section class="main_page" lang="en">
     <!-- main header -->
     <div class="main_header" id="header">PORTFOLIO</div>
     <!-- main list -->
     <ul class="main_list">
-      <li class="li_about">about</li>
-      <li class="li_skill">skill</li>
-      <li class="li_project">project</li>
-      <li class="li_contact">contact</li>
+      <li class="li_about" id="li">about</li>
+      <li class="li_skill" id="li">skill</li>
+      <li class="li_project" id="li">project</li>
+      <li class="li_contact" id="li">contact</li>
+      <li class="li_esc" onclick="closeTabClick()">Close Web-page (<span style="color: rgb(233, 233, 237)">esc</span>)
+      </li>
     </ul>
   </section>
 
   <!-- about -->
   <section class="about_page hidden">
-    <div id="header">ABOUT</div>
+    <div id="header" lang="en">ABOUT</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
@@ -66,7 +70,7 @@
 
   <!-- skill -->
   <section class="skill_page hidden">
-    <div id="header">SKILL</div>
+    <div id="header" lang="en">SKILL</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
@@ -95,7 +99,7 @@
 
   <!-- project -->
   <section class="project_page hidden">
-    <div id="header">PROJECT</div>
+    <div id="header" lang="en">PROJECT</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
@@ -136,7 +140,7 @@
 
   <!-- contact -->
   <section class="contact_page hidden">
-    <div id="header">CONTACT</div>
+    <div id="header" lang="en">CONTACT</div>
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>

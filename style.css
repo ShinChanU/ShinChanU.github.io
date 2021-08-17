@@ -2,16 +2,29 @@
   --largeFont-size: 50px;
   --mediumFont-size: 30px;
   --purple-color: rgb(227, 188, 253);
+  --header-color: rgb(173, 173, 184);
+  --white-color: rgb(233, 233, 237);
+  --yellow-color: rgb(200, 197, 49);
+  --blue-color: rgb(22, 16, 142);
+  --menuBackground-color: rgba(96, 85, 255, 0.15);
+}
+
+*:lang(en) {
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 body {
   justify-content: center;
   align-items: center;
-  font-family: 'Oswald', sans-serif;
+  background-image: url("img/back_img.jpg");
+  background-size: 100vw 100vh;
+  color: var(--yellow-color);
 }
 
 #header {
   font-size: var(--largeFont-size);
+  color: var(--header-color);
+  font-weight: bold;
 }
 
 .hidden {
@@ -20,17 +33,28 @@ body {
 
 /* main_page */
 
+.main_page {
+  background-color: var(--menuBackground-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 85%;
+  margin-top: 40px;
+  font-weight: bold;
+  border: var(--blue-color) solid 2px;
+}
+
 .main_header {
-  font-size: var(--largeFont-size);
   letter-spacing: 11px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .main_list {
   list-style: none ;
   padding-left: 0px;
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -41,13 +65,22 @@ body {
   font-size: var(--mediumFont-size);
   margin: 20px;
   text-align: center;
-  transition: background-color 0.6s;
+  transition: all 0.6s;
+  border: var(--blue-color) solid 2px;
 } 
+.main_list #li::first-letter {
+  color: var(--white-color);
+}
 .main_list li:hover {
-  background-color: var(--purple-color);
+  color: var(--white-color);
+  background-color: rgba(96, 85, 255, 0.5);
 }
 .main_list li:active {
   border-style: inset;
+}
+
+.main_list .li_esc {
+  margin-top: 80px;
 }
 
 /* about_page */
