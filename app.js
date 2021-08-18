@@ -73,6 +73,7 @@ function keyChangePage(x) {
       document.getElementsByClassName("contact_page")[0].classList.add("hidden");
       break;
     case 'Escape':
+      window.open('https://shinchanu.github.io/', '_self', '');
       window.close();
       break;
   }
