@@ -7,8 +7,10 @@
   --yellow-color: rgb(200, 197, 49);
   --blue-color: rgb(22, 16, 142);
   --menuBackground-color: rgba(96, 85, 255, 0.15);
+  --red-color: rgb(135, 6, 4);
 }
 
+/* 모든 페이지 공통 해당 */
 *:lang(en) {
   font-family: 'Cinzel Decorative', cursive;
 }
@@ -25,30 +27,48 @@ body {
   font-size: var(--largeFont-size);
   color: var(--header-color);
   font-weight: bold;
+  letter-spacing: 11px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .hidden {
   display: none;
 }
 
-/* main_page */
-
-.main_page {
-  background-color: var(--menuBackground-color);
+.main_page,
+.about_page,
+.skill_page,
+.project_page,
+.contact_page {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 55%;
-  height: 85%;
   margin-top: 40px;
-  font-weight: bold;
-  border: var(--blue-color) solid 2px;
 }
 
-.main_header {
-  letter-spacing: 11px;
-  text-align: center;
-  padding-top: 30px;
+.about_page,
+.skill_page,
+.project_page,
+.contact_page {
+  color: var(--white-color);
+  border: var(--red-color) 1px solid;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 85vw;
+}
+
+.about_main,
+.contact_main {
+  padding: 40px 0px;
+}
+
+/* main_page */
+.main_page {
+  background-color: var(--menuBackground-color);
+  width: 55%;
+  height: 85%;
+  font-weight: bold;
+  border: var(--blue-color) solid 2px;
 }
 
 .main_list {
@@ -89,10 +109,6 @@ body {
   text-align: center;
 }
 
-.about_page h1 {
-  text-align: center;
-}
-
 .about_main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -104,8 +120,8 @@ body {
 }
 
 .about_profile {
-  width: 75%;
   border-radius: 50px;
+  width: 37vw;
 }
 
 .about_motto, 
@@ -174,14 +190,6 @@ body {
   text-align: center;
 }
 
-.contact_main h1 {
-  margin: 10px;
-}
-
-.contact_main {
-  margin: 50px;
-}
-
 .contact_name,
 .contact_birth,
 .contact_number,
@@ -217,14 +225,16 @@ body {
 
 .links img{
   width: 100px;
+  height: 100px;
+  opacity: 0.3;
 }
 
 .links img:hover {
-  opacity: 0.3;
+  opacity: 1;
   transition-duration: 0.3s;
 }
 
 .links a {
-  color: black; 
+  color: var(--white-color); 
   text-decoration: none;
 }
