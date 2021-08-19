@@ -74,27 +74,40 @@
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
-    <p>
-    <div class="skill_front">
-      프론트엔드 언어(포트폴리오 제작시 사용)
-      <img src="img/icon/html.png">
-      <img src="img/icon/css.png">
-      <img src="img/icon/js.png">
+    <!-- skill_main -->
+    <div class="skill_main">
+      <input type="radio" name="pos" id="pos1" checked>
+      <input type="radio" name="pos" id="pos2">
+      <input type="radio" name="pos" id="pos3">
+      <input type="radio" name="pos" id="pos4">
+      <ul>
+        <li class="skill_front">
+          프론트엔드 언어(포트폴리오 제작시 사용)
+          <img src="img/icon/html.png">
+          <img src="img/icon/css.png">
+          <img src="img/icon/js.png">
+        </li>
+        <li class="skill_education">
+          학업적으로 배운 언어
+          <img src="img/icon/c_lan.png">
+          <img src="img/icon/c++.png">
+          <img src="img/icon/python.png">
+          <img src="img/icon/mysql.png">
+        </li>
+        <li class="skill_toStudy">
+          앞으로 배우고 싶은 언어
+          <img src="img/icon/typescript.png">
+          <img src="img/icon/reactjs.png">
+          <img src="img/icon/nodejs.png">
+        </li>
+        <p class="pos">
+          <label for="pos1">1</label>
+          <label for="pos2">2</label>
+          <label for="pos3">3</label>
+          <label for="pos4">4</label>
+        </p>
+      </ul>
     </div>
-    <div class="skill_education">
-      학업적으로 배운 언어
-      <img src="img/icon/c_lan.png">
-      <img src="img/icon/c++.png">
-      <img src="img/icon/python.png">
-      <img src="img/icon/mysql.png">
-    </div>
-    <div class="skill_toStudy">
-      앞으로 배우고 싶은 언어
-      <img src="img/icon/typescript.png">
-      <img src="img/icon/reactjs.png">
-      <img src="img/icon/nodejs.png">
-    </div>
-    </p>
   </section>
 
   <!-- project -->
@@ -103,7 +116,8 @@
     <form>
       <input type="button" value="Home" onClick="window.location.reload()">
     </form>
-    <article>
+    <!-- project_main -->
+    <div class="project_main">
       <h1>그림판(클론)</h1>
       <div class="project_element">
         <div class="paint_img"><img src="/img/project/paint.PNG"></div>
@@ -125,7 +139,7 @@
         </div>
       </div>
       <h1>스터디 그룹 프로젝트 사이트 제작</h1>
-      <div class="project_element">
+      <div class="project_element" id="project_element_last">
         <div class="team_img"><img src="/img/project/teamwork.PNG"></div>
         <div>
           프론트엔드 스터디 그룹 팀 프로젝트 사이트 제작<br><br>
@@ -134,8 +148,7 @@
           사용 언어 : HTML, CSS, JavaScript
         </div>
       </div>
-    </article>
-
+    </div>
   </section>
 
   <!-- contact -->

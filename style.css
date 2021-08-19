@@ -1,3 +1,8 @@
+@font-face {
+  src : url("font/a이끌림B.ttf");
+  font-family: "basic";
+}
+
 :root {
   --largeFont-size: 50px;
   --mediumFont-size: 30px;
@@ -11,6 +16,10 @@
 }
 
 /* 모든 페이지 공통 해당 */
+*:lang(ko-KR) {
+  font-family: "basic";
+}
+
 *:lang(en) {
   font-family: 'Cinzel Decorative', cursive;
 }
@@ -20,6 +29,7 @@ body {
   align-items: center;
   background-image: url("img/back_img.jpg");
   background-size: 100vw 100vh;
+  background-attachment: fixed;
   color: var(--yellow-color);
 }
 
@@ -52,13 +62,16 @@ body {
 .project_page,
 .contact_page {
   color: var(--white-color);
-  border: var(--red-color) 1px solid;
+  border: var(--red-color) 3px solid;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);
   width: 85vw;
 }
 
 .about_main,
-.contact_main {
+.contact_main,
+.skill_main,
+.project_main {
   padding: 40px 0px;
 }
 
@@ -66,7 +79,7 @@ body {
 .main_page {
   background-color: var(--menuBackground-color);
   width: 55%;
-  height: 85%;
+  /* height: 85%; */
   font-weight: bold;
   border: var(--blue-color) solid 2px;
 }
@@ -86,7 +99,7 @@ body {
   margin: 20px;
   text-align: center;
   transition: all 0.6s;
-  border: var(--blue-color) solid 2px;
+  border: var(--blue-color) double 7px;
 } 
 .main_list #li::first-letter {
   color: var(--white-color);
@@ -94,13 +107,16 @@ body {
 .main_list li:hover {
   color: var(--white-color);
   background-color: rgba(96, 85, 255, 0.5);
+  border-color: var(--white-color)  ;
+
 }
 .main_list li:active {
   border-style: inset;
 }
 
 .main_list .li_esc {
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 /* about_page */
@@ -166,11 +182,16 @@ body {
   grid-template-columns: 1fr 1fr;
   text-align: start;
   align-items: center;
-  border-bottom: 5px black dotted;
+  border-bottom: 5px var(--white-color) dotted;
   padding-bottom: 60px;
 }
 
-.project_page article div img {
+#project_element_last {
+  /* border-bottom: 1px var(--white-color) dotted; */
+  border-bottom: none;
+}
+
+.project_page div div img {
   height: 300px;
   align-items: flex-end;
 }

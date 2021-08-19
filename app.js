@@ -38,6 +38,7 @@ function closeTabClick() {
 function keyChangePage(x) {
   switch (x.key) {
     case 'a':
+    case 'A':
       document.getElementsByClassName("about_page")[0].classList.remove("hidden");
       document.getElementsByClassName("skill_page")[0].classList.add("hidden");
       document.getElementsByClassName("project_page")[0].classList.add("hidden");
@@ -45,6 +46,7 @@ function keyChangePage(x) {
       document.getElementsByClassName("main_page")[0].classList.add("hidden");
       break;
     case 's':
+    case 'S':
       document.getElementsByClassName("skill_page")[0].classList.remove("hidden");
       document.getElementsByClassName("about_page")[0].classList.add("hidden");
       document.getElementsByClassName("project_page")[0].classList.add("hidden");
@@ -52,6 +54,7 @@ function keyChangePage(x) {
       document.getElementsByClassName("main_page")[0].classList.add("hidden");
       break;
     case 'p':
+    case 'P':
       document.getElementsByClassName("project_page")[0].classList.remove("hidden");
       document.getElementsByClassName("skill_page")[0].classList.add("hidden");
       document.getElementsByClassName("about_page")[0].classList.add("hidden");
@@ -59,6 +62,7 @@ function keyChangePage(x) {
       document.getElementsByClassName("main_page")[0].classList.add("hidden");
       break;
     case 'c':
+    case 'C':
       document.getElementsByClassName("contact_page")[0].classList.remove("hidden");
       document.getElementsByClassName("skill_page")[0].classList.add("hidden");
       document.getElementsByClassName("project_page")[0].classList.add("hidden");
@@ -66,6 +70,7 @@ function keyChangePage(x) {
       document.getElementsByClassName("main_page")[0].classList.add("hidden");
       break;
     case 'm':
+    case 'M':
       document.getElementsByClassName("main_page")[0].classList.remove("hidden");
       document.getElementsByClassName("skill_page")[0].classList.add("hidden");
       document.getElementsByClassName("project_page")[0].classList.add("hidden");
