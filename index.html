@@ -35,7 +35,7 @@
   <section class="about_page hidden">
     <div id="header" lang="en">ABOUT</div>
     <form>
-      <input type="button" value="Home" onClick="window.location.reload()">
+      <input class="homeBtn" type="button" value="Main Page" onClick="window.location.reload()">
     </form>
     <!-- about_main -->
     <div class="about_main">
@@ -72,41 +72,51 @@
   <section class="skill_page hidden">
     <div id="header" lang="en">SKILL</div>
     <form>
-      <input type="button" value="Home" onClick="window.location.reload()">
+      <input class="homeBtn" type="button" value="Main Page" onClick="window.location.reload()">
     </form>
     <!-- skill_main -->
-    <div class="skill_main">
+    <div class="skill_main" id="slide">
       <input type="radio" name="pos" id="pos1" checked>
       <input type="radio" name="pos" id="pos2">
       <input type="radio" name="pos" id="pos3">
-      <input type="radio" name="pos" id="pos4">
       <ul>
         <li class="skill_front">
-          프론트엔드 언어(포트폴리오 제작시 사용)
-          <img src="img/icon/html.png">
-          <img src="img/icon/css.png">
-          <img src="img/icon/js.png">
+          <div class="skill_canvas" id="canvas1">
+            <img src="img/icon/html.png">
+            <img src="img/icon/css.png">
+            <img src="img/icon/js.png">
+          </div>
+          <div class="skill_comments">
+            프론트엔드 언어(포트폴리오 제작시 사용)
+          </div>
         </li>
         <li class="skill_education">
-          학업적으로 배운 언어
-          <img src="img/icon/c_lan.png">
-          <img src="img/icon/c++.png">
-          <img src="img/icon/python.png">
-          <img src="img/icon/mysql.png">
+          <div class="skill_canvas" id="canvas2">
+            <img src="img/icon/c_lan.png">
+            <img src="img/icon/c++.png">
+            <img src="img/icon/python.png">
+            <img src="img/icon/mysql.png">
+          </div>
+          <div class="skill_comments">
+            학업적으로 배운 언어
+          </div>
         </li>
         <li class="skill_toStudy">
-          앞으로 배우고 싶은 언어
-          <img src="img/icon/typescript.png">
-          <img src="img/icon/reactjs.png">
-          <img src="img/icon/nodejs.png">
+          <div class="skill_canvas" id="canvas3">
+            <img src="img/icon/typescript.png">
+            <img src="img/icon/reactjs.png">
+            <img src="img/icon/nodejs.png">
+          </div>
+          <div class="skill_comments">
+            앞으로 배우고 싶은 언어
+          </div>
         </li>
-        <p class="pos">
-          <label for="pos1">1</label>
-          <label for="pos2">2</label>
-          <label for="pos3">3</label>
-          <label for="pos4">4</label>
-        </p>
       </ul>
+      <p class="pos">
+        <label for="pos1"></label>
+        <label for="pos2"></label>
+        <label for="pos3"></label>
+      </p>
     </div>
   </section>
 
@@ -114,7 +124,7 @@
   <section class="project_page hidden">
     <div id="header" lang="en">PROJECT</div>
     <form>
-      <input type="button" value="Home" onClick="window.location.reload()">
+      <input class="homeBtn" type="button" value="Main Page" onClick="window.location.reload()">
     </form>
     <!-- project_main -->
     <div class="project_main">
@@ -155,7 +165,7 @@
   <section class="contact_page hidden">
     <div id="header" lang="en">CONTACT</div>
     <form>
-      <input type="button" value="Home" onClick="window.location.reload()">
+      <input class="homeBtn" type="button" value="Main Page" onClick="window.location.reload()">
     </form>
     <div class="contact_main">
       <div class="contact_name">
