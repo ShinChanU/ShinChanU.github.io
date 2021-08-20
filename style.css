@@ -60,6 +60,7 @@ body {
   margin-top: 40px;
 }
 
+.main_page,
 .about_page,
 .skill_page,
 .project_page,
@@ -175,10 +176,10 @@ ul, li {
 
 /* main_page */
 .main_page {
-  background-color: var(--menuBackground-color);
+  /* background-color: var(--menuBackground-color); */
   width: 55%;
   font-weight: bold;
-  border: var(--blue-color) solid 2px;
+  /* border: var(--blue-color) solid 2px; */
 }
 
 .main_list {
@@ -196,15 +197,16 @@ ul, li {
   margin: 20px;
   text-align: center;
   transition: all 0.6s;
-  border: var(--blue-color) double 7px;
+  border: var(--red-color) 7px double;
+  border-radius: 10px;
+  letter-spacing: 3px;
 } 
 .main_list #li::first-letter {
-  color: var(--white-color);
+  color: var(--yellow-color);
 }
 .main_list li:hover {
   color: var(--white-color);
-  background-color: rgba(96, 85, 255, 0.5);
-  border-color: var(--white-color);
+  border-color: var(--yellow-color);
 
 }
 .main_list li:active {
