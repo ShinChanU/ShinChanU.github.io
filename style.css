@@ -148,6 +148,7 @@ body {
 .about_main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 60px;
 }
 
 .about_img {
@@ -186,6 +187,21 @@ body {
 
 .about_education {
   padding-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .about_main {
+    display: block;
+  }
+  .about_motto {
+    margin: 30px 0px;
+    display: block;
+  }
+  .about_resume {
+    display: block;
+    /* text-align: center; */
+    padding-left: 50px;
+  }
 }
 
 /* skill_page */
