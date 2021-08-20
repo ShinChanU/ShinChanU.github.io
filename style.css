@@ -171,12 +171,17 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  color: rgb(115, 206, 206);
 }
 
 .about_resume {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 20px;
+}
+
+.about_resume p {
+  color: rgb(190, 118, 238);
 }
 
 .about_education {
