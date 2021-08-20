@@ -155,37 +155,53 @@
       <input class="homeBtn" type="button" value="Main Page" onClick="window.location.reload()">
     </form>
     <!-- project_main -->
-    <div class="project_main">
-      <h1>그림판(클론)</h1>
-      <div class="project_element">
-        <div class="paint_img"><img src="/img/project/paint.PNG"></div>
-        <div>
-          HTML의 CANVAS태그를 이용해 만든 간단한 웹 그림판<br><br>
-          기능 및 구현 : 펜슬 크기 조절, 9가지 색 사용, 캔버스 전체 색칠, 파일 다운로드<br>
-          제작 기간 : 1주일<br>
-          사용 언어 : HTML, CSS, JavaScript
-        </div>
-      </div>
-      <h1>미니 쇼핑몰 구현(클론)</h1>
-      <div class="project_element">
-        <div class="shopping_img"><img src="/img/project/shopping.PNG"></div>
-        <div>
-          js와 json을 중심으로 만든 웹 미니 쇼핑몰<br><br>
-          기능 및 구현 : 티, 바지, 치마로 카테고리 분류가능, 색 지정해서 분류 가능, 내부 스크롤 기능<br>
-          제작 기간 : 1주일<br>
-          사용 언어 : HTML, CSS, JavaScript
-        </div>
-      </div>
-      <h1>스터디 그룹 프로젝트 사이트 제작</h1>
-      <div class="project_element" id="project_element_last">
-        <div class="team_img"><img src="/img/project/teamwork.PNG"></div>
-        <div>
-          프론트엔드 스터디 그룹 팀 프로젝트 사이트 제작<br><br>
-          기능 및 구현 : 스크롤, 타이핑 애니메이션, 상단메뉴를 통한 섹션 이동 편리<br>
-          제작 기간 : 2주일<br>
-          사용 언어 : HTML, CSS, JavaScript
-        </div>
-      </div>
+    <div class="project_main" id="slide">
+      <input type="radio" name="posi" id="posi1" checked>
+      <input type="radio" name="posi" id="posi2">
+      <input type="radio" name="posi" id="posi3">
+      <ul>
+        <li>
+          <h1>그림판(클론)</h1>
+          <div class="project_element">
+            <div class="paint_img"><img src="/img/project/paint.PNG"></div>
+            <div>
+              HTML의 CANVAS태그를 이용해 만든 간단한 웹 그림판<br><br>
+              기능 및 구현 : 펜슬 크기 조절, 9가지 색 사용, 캔버스 전체 색칠, 파일 다운로드<br>
+              제작 기간 : 1주일<br>
+              사용 언어 : HTML, CSS, JavaScript
+            </div>
+          </div>
+        </li>
+        <li>
+          <h1>미니 쇼핑몰 구현(클론)</h1>
+          <div class="project_element">
+            <div class="shopping_img"><img src="/img/project/shopping.PNG"></div>
+            <div>
+              js와 json을 중심으로 만든 웹 미니 쇼핑몰<br><br>
+              기능 및 구현 : 티, 바지, 치마로 카테고리 분류가능, 색 지정해서 분류 가능, 내부 스크롤 기능<br>
+              제작 기간 : 1주일<br>
+              사용 언어 : HTML, CSS, JavaScript
+            </div>
+          </div>
+        </li>
+        <li>
+          <h1>스터디 그룹 프로젝트 사이트 제작</h1>
+          <div class="project_element" id="project_element_last">
+            <div class="team_img"><img src="/img/project/teamwork.PNG"></div>
+            <div>
+              프론트엔드 스터디 그룹 팀 프로젝트 사이트 제작<br><br>
+              기능 및 구현 : 스크롤, 타이핑 애니메이션, 상단메뉴를 통한 섹션 이동 편리<br>
+              제작 기간 : 2주일<br>
+              사용 언어 : HTML, CSS, JavaScript
+            </div>
+          </div>
+        </li>
+      </ul>
+      <p class="pos">
+        <label for="posi1"></label>
+        <label for="posi2"></label>
+        <label for="posi3"></label>
+      </p>
     </div>
   </section>
 
