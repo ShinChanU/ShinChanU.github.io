@@ -41,7 +41,7 @@
     <div class="about_main">
       <!-- about_img -->
       <div class="about_img">
-        <img class="about_profile" src="img/myProflie.jpg" alt="profile">
+        <img class="about_profile" src="img/etc/studying.png" alt="profile">
       </div>
       <!-- about_myStory -->
       <div class="about_myStory">
@@ -82,9 +82,18 @@
       <ul>
         <li class="skill_front">
           <div class="skill_canvas" id="canvas1">
-            <img src="img/icon/html.png">
-            <img src="img/icon/css.png">
-            <img src="img/icon/js.png">
+            <div class="skill_html">
+              <img src="img/icon/html.png">
+              <div id="skill_mouseover">구글링</div>
+            </div>
+            <div class="skill_css">
+              <img src="img/icon/css.png">
+              <div id="skill_mouseover">만이</div>
+            </div>
+            <div class="skill_js">
+              <img src="img/icon/js.png">
+              <div id="skill_mouseover">살길이다 !</div>
+            </div>
           </div>
           <div class="skill_comments">
             프론트엔드 언어(포트폴리오 제작시 사용)
@@ -92,10 +101,22 @@
         </li>
         <li class="skill_education">
           <div class="skill_canvas" id="canvas2">
-            <img src="img/icon/c_lan.png">
-            <img src="img/icon/c++.png">
-            <img src="img/icon/python.png">
-            <img src="img/icon/mysql.png">
+            <div class="skill_c">
+              <img src="img/icon/c_lan.png">
+              <div id="skill_mouseover">학교에서</div>
+            </div>
+            <div class="skill_cPl">
+              <img src="img/icon/c++.png">
+              <div id="skill_mouseover">배웠지만</div>
+            </div>
+            <div class="skill_python">
+              <img src="img/icon/python.png">
+              <div id="skill_mouseover">1도 기억이</div>
+            </div>
+            <div class="skill_mysql">
+              <img src="img/icon/mysql.png">
+              <div id="skill_mouseover">안난다 !</div>
+            </div>
           </div>
           <div class="skill_comments">
             학업적으로 배운 언어
@@ -103,9 +124,18 @@
         </li>
         <li class="skill_toStudy">
           <div class="skill_canvas" id="canvas3">
-            <img src="img/icon/typescript.png">
-            <img src="img/icon/reactjs.png">
-            <img src="img/icon/nodejs.png">
+            <div class="skill_typescript">
+              <img src="img/icon/typescript2.png">
+              <div id="skill_mouseover">그래서</div>
+            </div>
+            <div class="skill_react">
+              <img src="img/icon/reactjs.png">
+              <div id="skill_mouseover">언제</div>
+            </div>
+            <div class="skill_node">
+              <img src="img/icon/nodejs.png">
+              <div id="skill_mouseover">공부할건데 ?</div>
+            </div>
           </div>
           <div class="skill_comments">
             앞으로 배우고 싶은 언어
@@ -168,23 +198,28 @@
       <input class="homeBtn" type="button" value="Main Page" onClick="window.location.reload()">
     </form>
     <div class="contact_main">
-      <div class="contact_name">
-        <div class="name">Name</div>
-        <div class="myName">신찬우 (SHIN CHAN U)</div>
-      </div>
-      <div class="contact_birth">
-        <div class="birth">Birth</div>
-        <div class="myBirth">1997.02.17 (만 24세)</div>
-      </div>
-      <div class="contact_number">
-        <!-- <img src="img/icon/call.png" class="contact_img"> -->
-        <div class="phone_num">Phone number</div>
-        <div class="myNumber">010-2833-3904</div>
-      </div>
-      <div class="contact_email">
-        <div class="Email">E-mail</div>
-        <div class="myEmail">tlscksdn963@naver.com</div>
-        <!-- <img src="img/icon/email.png" class="contact_img"> -->
+      <div class="contact_info">
+        <div>
+          <div class="contact_name">
+            <div class="name">Name</div>
+            <div class="myName">신찬우 (SHIN CHAN U)</div>
+          </div>
+          <div class="contact_birth">
+            <div class="birth">Birth</div>
+            <div class="myBirth">1997.02.17 (만 24세)</div>
+          </div>
+          <div class="contact_number">
+            <div class="phone_num">Phone number</div>
+            <div class="myNumber">010-2833-3904</div>
+          </div>
+          <div class="contact_email">
+            <div class="Email">E-mail</div>
+            <div class="myEmail">tlscksdn963@naver.com</div>
+          </div>
+        </div>
+        <div class="contact_cooper">
+          <img src="/img/etc/cooperation.png">
+        </div>
       </div>
       <div class="contact_link">
         <div class="links">
@@ -207,7 +242,6 @@
         </div>
       </div>
     </div>
-    <div style="margin-left: 600px; font-size: 50px; position: absolute; top: 200px; right: 200px;">blank beauty</div>
   </section>
   <script src="app.js"></script>
 </body>

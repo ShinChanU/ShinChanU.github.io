@@ -9,9 +9,9 @@
   --purple-color: rgb(227, 188, 253);
   --header-color: rgb(173, 173, 184);
   --white-color: rgb(233, 233, 237);
-  --whiteOpacity-color: rgba(233, 233, 237, 0.8);
-  --greenOpacity-color: rgba(171, 235, 171, 0.8);
-  --blueOpacity-color: rgba(236, 208, 114, 0.8);
+  --whiteOpacity-color: rgba(255, 253, 220, 0.98);
+  --greenOpacity-color: rgba(200, 255, 200, 0.98);
+  --blueOpacity-color: rgba(255, 255, 255, 0.98);
   --yellow-color: rgb(200, 197, 49);
   --blue-color: rgb(44, 38, 141);
   --menuBackground-color: rgba(96, 85, 255, 0.15);
@@ -30,7 +30,7 @@
 body {
   justify-content: center;
   align-items: center;
-  background-image: url("img/back_img.jpg");
+  background-image: url("img/etc/back_img.jpg");
   background-size: 100vw 100vh;
   background-attachment: fixed;
   color: var(--yellow-color);
@@ -100,7 +100,6 @@ body {
 .main_page {
   background-color: var(--menuBackground-color);
   width: 55%;
-  /* height: 85%; */
   font-weight: bold;
   border: var(--blue-color) solid 2px;
 }
@@ -191,7 +190,29 @@ body {
 
 .skill_page img {
   width: 150px;
-  margin: 0px 15px;
+  height: auto;
+  /* margin: 0px 15px; */
+}
+
+#skill_mouseover {
+  text-align: center;
+  font-size: var(--mediumFont-size);
+  color: black;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.skill_html:hover #skill_mouseover,
+.skill_css:hover #skill_mouseover,
+.skill_js:hover #skill_mouseover, 
+.skill_c:hover #skill_mouseover, 
+.skill_cPl:hover #skill_mouseover, 
+.skill_python:hover #skill_mouseover, 
+.skill_mysql:hover #skill_mouseover,
+.skill_typescript:hover #skill_mouseover,
+.skill_react:hover #skill_mouseover,
+.skill_node:hover #skill_mouseover {
+  opacity: 1;
 }
 
 .skill_main ul, li {
@@ -223,24 +244,31 @@ body {
 }
 
 .skill_canvas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 55vw;
   margin: auto;
   padding: 50px 0px;
 }
 
+#canvas1,
+#canvas2,
+#canvas3 {
+  border: var(--red-color) 3px solid;
+  border-radius: 10px;
+}
+
 #canvas1 {
   background-color: var(--whiteOpacity-color);
-
 }
 
 #canvas2 {
   background-color: var(--greenOpacity-color);
-
 }
 
 #canvas3 {
   background-color: var(--blueOpacity-color);
-
 }
 
 .skill_comments {
@@ -311,7 +339,6 @@ body {
 }
 
 #project_element_last {
-  /* border-bottom: 1px var(--white-color) dotted; */
   border-bottom: none;
 }
 
@@ -335,12 +362,17 @@ body {
   text-align: center;
 }
 
+.contact_info {
+  display: flex;
+  flex-direction: row;
+}
+
 .contact_name,
 .contact_birth,
 .contact_number,
 .contact_email {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 1fr;
   margin: 20px;
   font-size: var(--mediumFont-size);
 }
@@ -349,16 +381,17 @@ body {
   text-align: start;
 }
 
-.contact_means div {
-  border: 1px black solid;
+.contact_cooper img{
+  width: 20vw;
+  margin-left: 10vw;
 }
 
-.contact_main img {
+.contact_link img {
   width: 33px; 
 }
 
 .contact_link {
-  margin-top: 100px;
+  margin-top: 5px;
 }
 
 .links {
