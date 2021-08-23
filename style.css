@@ -38,7 +38,7 @@ body {
 
 #header {
   font-size: var(--largeFont-size);
-  color: var(--header-color);
+  color: white;
   font-weight: bold;
   letter-spacing: 11px;
   text-align: center;
@@ -176,10 +176,8 @@ ul, li {
 
 /* main_page */
 .main_page {
-  /* background-color: var(--menuBackground-color); */
   width: 55%;
   font-weight: bold;
-  /* border: var(--blue-color) solid 2px; */
 }
 
 .main_list {
@@ -213,9 +211,11 @@ ul, li {
   border-style: inset;
 }
 
-.main_list .li_esc {
-  margin-top: 50px;
-  margin-bottom: 0px;
+.main_list .copyright {
+  margin-top: 100px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
 }
 
 /* about_page */

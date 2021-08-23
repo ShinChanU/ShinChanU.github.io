@@ -28,11 +28,6 @@ function click() {
 
 click();
 
-// 현재 창 닫기
-function closeTabClick() {
-  window.close();
-}
-
 // 메뉴에서 단축키 입력시 발생
 // 더 좋은 코드 필요
 function keyChangePage(x) {
@@ -76,10 +71,6 @@ function keyChangePage(x) {
       document.getElementsByClassName("project_page")[0].classList.add("hidden");
       document.getElementsByClassName("about_page")[0].classList.add("hidden");
       document.getElementsByClassName("contact_page")[0].classList.add("hidden");
-      break;
-    case 'Escape':
-      window.open('https://shinchanu.github.io/', '_self', '');
-      window.close();
       break;
   }
 }
